@@ -9,3 +9,9 @@
  - for migration `npx prisma db push`
  - for prisma studio `npx prisma studio`
  - other cmd to generate prisma client `npx prisma generate`
+
+
+other links 
+- `https://nextjs.org/docs/app/api-reference/file-conventions/route#request-body`
+- `https://nextjs.org/docs/app/getting-started/layouts-and-pages`
+- `https://nextjs.org/docs/app/getting-started/linking-and-navigating`
