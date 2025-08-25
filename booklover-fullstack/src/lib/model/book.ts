@@ -8,7 +8,7 @@ export interface Book {
     description?: string;
     content?: string;
     chapters?: Chapter[];
-    tags: string[];
+    tags: BookTag[];
     genres: "fiction" | "non-fiction" | "fantasy" | "sci-fi" | "mystery" | "romance" | "history" | "biography";
     authorId: number;
     status: "draft" | "published" | "archived";
@@ -23,11 +23,23 @@ export interface Chapter {
     order: number;
     content: string;
     wordCount: number;
+    bookId: number;
+    book?: Book;
 }
 
 export interface BookMeta {
+    id: number;
     pages?: number;
     language?: string;
     isbn13?: string;
     coverUrl?: string;
+    bookId: number;
+    book?: Book;
+}
+
+export interface BookTag {
+    id: number;
+    name: string
+    bookId: number;
+    book?: Book;
 }
